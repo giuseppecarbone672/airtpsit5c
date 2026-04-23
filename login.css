@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sfondo animato */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, #00c6ff33, transparent),
+                radial-gradient(circle at 80% 70%, #0072ff33, transparent);
+    animation: moveBg 10s infinite alternate;
+}
+
+@keyframes moveBg {
+    from { transform: translate(0,0); }
+    to { transform: translate(-30px, -30px); }
+}
+
+.login-container {
+    z-index: 2;
+}
+
+.card {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    font-size: 12px;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -8px;
+    font-size: 10px;
+    color: #00c6ff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.switch {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch span {
+    color: #00c6ff;
+    cursor: pointer;
+}

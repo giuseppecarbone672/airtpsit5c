@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Booking Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="login-container">
+    <div class="card">
+
+        <h1>✈️ FlyNow</h1>
+        <p class="subtitle">Accedi per prenotare il tuo prossimo viaggio</p>
+
+        <form action="login.php" method="POST">
+            <div class="input-group">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+
+            <button type="submit">Accedi</button>
+        </form>
+
+        <p class="switch">Non hai un account? <span onclick="toggleForm()">Registrati</span></p>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
