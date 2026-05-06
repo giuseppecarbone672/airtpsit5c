@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWing Airlines - Vola con noi nel mondo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header e Navigazione -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    ✈️ SkyWing Airlines
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinazioni</a></li>
+                    <li><a href="#services">Servizi</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Scopri il mondo con SkyWing Airlines</h1>
+            <p>Voli sicuri, confortevoli e convenienti verso le migliori destinazioni del mondo</p>
+            <a href="#booking" class="btn btn-primary">Prenota Ora</a>
+        </div>
+    </section>
+
+    <!-- Sezione Destinazioni Popolari -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Destinazioni Popolari</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        🏖️
+                    </div>
+                    <h3>Maldive</h3>
+                    <p>Spiagge paradisiache e acque cristalline</p>
+                    <span class="price">€299</span>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        🗽
+                    </div>
+                    <h3>New York</h3>
+                    <p>La città che non dorme mai</p>
+                    <span class="price">€349</span>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        🗼
+                    </div>
+                    <h3>Parigi</h3>
+                    <p>La città dell'amore e dell'arte</p>
+                    <span class="price">€199</span>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        🏯
+                    </div>
+                    <h3>Tokyo</h3>
+                    <p>Tradizione e modernità si incontrano</p>
+                    <span class="price">€499</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Servizi -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>I Nostri Servizi</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛫</div>
+                    <h3>Voli Diretti</h3>
+                    <p>Collegamento diretto verso le principali città mondiali senza scali</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Catering Premium</h3>
+                    <p>Piatti deliziosi preparati da chef esperti</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💺</div>
+                    <h3>Comfort First Class</h3>
+                    <p>Sedili reclinabili e spazi ampi per il massimo comfort</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎮</div>
+                    <h3>Intrattenimento</h3>
+                    <p>Sistema di intrattenimento on-demand con film, musica e giochi</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧳</div>
+                    <h3>Bagaglio Incluso</h3>
+                    <p>2 bagagli inclusi in tutte le prenotazioni</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>WiFi Gratuito</h3>
+                    <p>Connessione internet veloce durante tutto il volo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Booking -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Prenota il tuo volo</h2>
+            <form class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="departure">Partenza</label>
+                        <input type="text" id="departure" placeholder="Da quale città?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival">Arrivo</label>
+                        <input type="text" id="arrival" placeholder="Verso quale città?" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="departure-date">Data Partenza</label>
+                        <input type="date" id="departure-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="return-date">Data Ritorno</label>
+                        <input type="date" id="return-date">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="passengers">Passeggeri</label>
+                        <select id="passengers" required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Classe</label>
+                        <select id="class" required>
+                            <option>Economy</option>
+                            <option>Business</option>
+                            <option>First Class</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Cerca Voli</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SkyWing Airlines</h4>
+                    <p>La tua compagnia aerea per eccellenza</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="#">Chi Siamo</a></li>
+                        <li><a href="#">Carriere</a></li>
+                        <li><a href="#">Sostenibilità</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <p>Email: info@skywingairlines.com</p>
+                    <p>Tel: +39 06 1234 5678</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SkyWing Airlines. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
